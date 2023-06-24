@@ -1,6 +1,6 @@
 
 # Set a base docker image (see https://hub.docker.com/r/nodered/node-red) 
-FROM nodered/node-red:latest-12
+FROM nodered/node-red:latest
 # USER root
 
 RUN npm install node-red-dashboard
