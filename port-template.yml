@@ -1,4 +1,4 @@
 ports:
   - name: "Web interface" # label of the exposed port
-    port: 1880 # port to open to the internet
+    port: 1881 # port to open to the internet
     main: true # the main port respresents the main public URL of the application

@@ -1,0 +1,5 @@
+{
+    "httpAdminRoot": "${ADMIN_ROOT}",
+    "ui": { "path": "${UI_ROOT}" },
+    "uiPort": 1881
+}

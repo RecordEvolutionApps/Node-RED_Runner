@@ -5,3 +5,16 @@ NODE_RED_FLOW:
     description: defines the Node-RED flow, which will be deployed
     defaultValue: |
         []
+
+ADMIN_ROOT:
+    label: Node-RED Development UI
+    type: textarea
+    description: The route to the Development UI
+    defaultValue: '/admin'
+
+        
+UI_ROOT:
+    label: Node-RED Dashboard
+    type: textarea
+    description: The route to the Dashboard UI
+    defaultValue: '/'
