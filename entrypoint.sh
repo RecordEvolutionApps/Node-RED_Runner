@@ -11,13 +11,15 @@ echo "$NODE_RED_FLOW" | jq '.' > flows.json
 
 echo "Starting node-red ..."
 
-if [ "$DEV_MODE" = true ]; then
+if [[ "$DEV_MODE" == "true" ]]; then
   ADMIN_ROOT="/"
   UI_ROOT="/ui"
 else
   ADMIN_ROOT="/admin"
   UI_ROOT="/"
 fi
+
+echo The admin root: $ADMIN_ROOT
 
 envsubst < custom-settings.json > custom-settings_run.json
 
