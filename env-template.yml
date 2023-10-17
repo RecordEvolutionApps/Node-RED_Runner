@@ -24,4 +24,4 @@ DEV_MODE:
     label: Enable Development Mode
     type: boolean
     description: When not in dev mode you can still reach the flow designer at the /admin route
-    defaultValue: false
+    defaultValue: true
