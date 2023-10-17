@@ -6,15 +6,22 @@ NODE_RED_FLOW:
     defaultValue: |
         []
 
-ADMIN_ROOT:
-    label: Node-RED Development UI
-    type: textarea
-    description: The route to the Development UI
-    defaultValue: '/admin'
+# ADMIN_ROOT:
+#     label: Node-RED Development UI
+#     type: textarea
+#     description: The route to the Development UI
+#     defaultValue: '/admin'
 
         
-UI_ROOT:
-    label: Node-RED Dashboard
-    type: textarea
-    description: The route to the Dashboard UI
-    defaultValue: '/'
+# UI_ROOT:
+#     label: Node-RED Dashboard
+#     type: textarea
+#     description: The route to the Dashboard UI
+#     defaultValue: '/'
+
+
+DEV_MODE:
+    label: Enable Development Mode
+    type: boolean
+    description: When not in dev mode you can still reach the flow designer at the /admin route
+    default: true

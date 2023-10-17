@@ -1,0 +1,19 @@
+{
+    "name": "re-node-red-app",
+    "version": "1.0.0",
+    "description": "Node Red as an App on the Record Evolution Platform",
+    "main": "index.js",
+    "scripts": {
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "node-red-contrib-http-request": "^0.1.14",
+        "node-red-dashboard": "^3.6.0",
+        "node-red-node-email": "^2.0.1",
+        "node-red-node-sqlite": "^1.1.0",
+        "node-red-node-ui-table": "^0.4.3",
+        "node-red-contrib-web-worldmap": "4.0.0"
+    }
+  }
