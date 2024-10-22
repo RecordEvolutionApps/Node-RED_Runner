@@ -1,6 +1,6 @@
 
 # Set a base docker image (see https://hub.docker.com/r/nodered/node-red) 
-FROM nodered/node-red:latest
+FROM nodered/node-red:4.0.5
 # USER root
 
 RUN npm install git+https://github.com/RecordEvolution/node-red-contrib-wamp-auth.git
