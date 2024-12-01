@@ -5,8 +5,7 @@ This App runs Node-RED on the device and facilitates the creation of flow contro
 
 For more information check the official [__home page of Node-RED__](https://nodered.org/) or the associated [__GitHub repository__](https://github.com/node-red/node-red).
 
-<img src="https://camo.githubusercontent.com/c7b6e0b937295c4d2c852130814050eb0caffac5b700ead6de21df6dbf83aa82/687474703a2f2f6e6f64657265642e6f72672f696d616765732f6e6f64652d7265642d73637265656e73686f742e706e67">
-
+<img src="https://user-images.githubusercontent.com/4663918/63022233-76304400-be70-11e9-8516-cab988df6b1e.png">
 
 ## Usage Instructions
 
