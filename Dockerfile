@@ -6,7 +6,6 @@ USER root
 RUN apk update && apk add --no-cache python3 py3-setuptools build-base sqlite-dev jq gettext
 
 USER node-red
-RUN npm install git+https://github.com/RecordEvolution/node-red-contrib-wamp-auth.git
 RUN npm install \
     node-red-contrib-http-request \
     node-red-dashboard \
