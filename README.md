@@ -1,4 +1,5 @@
 # Node-RED
+
 Node-RED is a programming tool that enables the integration of hardware devices, APIs, and online services in an innovative way.
 With a low code editor, users can effortlessly connect flows using an extensive selection of nodes available in the palette.
 This App runs Node-RED on the device and facilitates the creation of flow controls directly on the device.
@@ -24,32 +25,16 @@ If your flow contains a dashboard, then you can enable the Remote Access in the 
 
 <img src="https://storage.googleapis.com/reswarm-images/Screenshot%202023-07-18%20at%2015.31.35.png">
 
-
-# Creating Standalone Device Dashboards
+## Creating Standalone Device Dashboards
 
 The Node-RED Runner app is an easy way to test out your workflows on different devices, but to use your flow in a production environment we recommend you clone this app on GitHub and add your flow as a file into the app code repository. This way you gain full versioning support and improve usability for users since they don't have to configure anything to use the app.
 
-# LICENSE
+## LICENSE
 ### Apache-2.0 License
 
 Copyright (c) OpenJS Foundation and other contributors, https://openjsf.org/
 
 Modified work Copyright (c) 2020 Record Evolution GmbH
-   1. Adaptation from original author(s) binary code to be used as a microservice
-
-See full license in the [source code](https://github.com/node-red/node-red)
-
-## Hardware
-You will need to register a Raspberry Pi or any other device with the supported architecture in our device studio.
-If you haven't registered a device yet, follow the [documentation](https://docs.record-evolution.de/#/en/Reswarm/connect-devices)
-
-
-# LICENSE
-### Apache-2.0 License
-
-Copyright (c) OpenJS Foundation and other contributors, https://openjsf.org/
-
-Modified work Copyright (c) 2020 Record Evolution GmbH
-   1. Adaptation from original author(s) binary code to be used as a microservice
+Adaptation from original author(s) binary code to be used as a microservice
 
 See full license in the [source code](https://github.com/node-red/node-red)
