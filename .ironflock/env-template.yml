@@ -3,8 +3,7 @@ NODE_RED_FLOW:
     label: Node-RED flow.json
     type: textarea
     description: defines the Node-RED flow, which will be deployed
-    defaultValue: |
-        []
+    defaultValue: "[]"
 
 # ADMIN_ROOT:
 #     label: Node-RED Development UI
