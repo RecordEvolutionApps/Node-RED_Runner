@@ -1,9 +1,9 @@
 
 # Set a base docker image (see https://hub.docker.com/r/nodered/node-red) 
-FROM nodered/node-red:4.0.9
+FROM nodered/node-red:4.1.0
 USER root
 
-RUN apk update && apk add --no-cache python3 py3-setuptools build-base sqlite-dev jq gettext
+RUN apk update && apk add --no-cache python3 py3-pip py3-setuptools build-base sqlite-dev jq gettext
 
 USER node-red
 RUN npm install \
@@ -17,9 +17,14 @@ RUN npm install \
 
 USER root
 ENV HTTP?ADMIN?ROOT=\2343
+
+COPY requirements.txt .
+RUN pip3 install -r requirements.txt --break-system-packages
+COPY register_device.py .
+
+
 COPY entrypoint.sh .
 COPY custom-settings.json .
 RUN chmod a+x entrypoint.sh
 
-# Set the entrypoint to your script
 ENTRYPOINT ["/usr/src/node-red/entrypoint.sh"]

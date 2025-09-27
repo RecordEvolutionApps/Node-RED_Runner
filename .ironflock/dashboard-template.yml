@@ -1,0 +1,101 @@
+name: Node-RED_Runner
+widgets:
+  - package_name: widget-embed
+    chartconfig:
+      webUrl:
+        valueRef:
+          tablename: devices
+          column: url
+          queryParams:
+            filterAnd:
+              - column: devname
+                operator: =
+                value: "1"
+                dataType: string
+                useRoute: true
+            limit: 1
+    version: 1.0.3
+    layout_id: 823116a1-d080-42de-be05-891b23a3df12
+  - package_name: widget-navbar
+    chartconfig:
+      title: "$str:"
+      style:
+        fontSize: $num:16
+        fontWeight: $num:400
+      navItems:
+        tableRef:
+          tablename: devices
+          queryParams:
+            limit: 100
+            filterAnd:
+              - column: latest_flag
+                operator: =
+                value: "true"
+                dataType: boolean
+            windowPeriod: null
+            windowLength: 5
+            nowMinusPeriods: 0
+          format:
+            label: devname
+            iconName: $str:hard_drive
+            route: devname
+            leadingSlash: null
+            trailingSlash: null
+      route: null
+      leadingSlash: null
+      trailingSlash: null
+    version: 1.0.9
+    layout_id: b14fb7d0-d62a-4921-9fa7-1b452469af1c
+  - package_name: widget-textbox
+    chartconfig:
+      title:
+        text: $str:Pick a Node-RED server above
+        fontSize: null
+        fontWeight: null
+        color: ""
+        backgroundColor: ""
+      subTitle:
+        text: "$str:"
+        fontSize: null
+        fontWeight: null
+        color: ""
+      body:
+        text: "$str:"
+        fontSize: null
+        fontWeight: null
+        color: ""
+        backgroundColor: ""
+    version: 1.1.7
+    layout_id: ff38a260-f2ef-4016-9d51-19451f68e9e2
+layout:
+  gridLayout:
+    - x: 0
+      y: 0
+      w: 12
+      h: 2
+      id: b14fb7d0-d62a-4921-9fa7-1b452469af1c
+    - x: 0
+      y: 2
+      w: 4
+      h: 6
+      id: ff38a260-f2ef-4016-9d51-19451f68e9e2
+  subRoutes:
+    "*":
+      gridLayout:
+        - x: 0
+          y: 0
+          w: 12
+          h: 2
+          id: b14fb7d0-d62a-4921-9fa7-1b452469af1c
+        - x: 0
+          y: 2
+          w: 12
+          h: 22
+          id: 823116a1-d080-42de-be05-891b23a3df12
+style:
+  theme:
+    theme_name: essos
+  background_color: "#fdfcf5"
+  text_color: "#893448"
+  tile_background_color: "#fdfcf5"
+  tile_border_color: "#e6e6e600"

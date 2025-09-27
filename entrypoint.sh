@@ -19,6 +19,8 @@ else
   export UI_ROOT="/"
 fi
 
+python3 -u register_device.py
+
 echo The admin root: $ADMIN_ROOT
 
 envsubst < custom-settings.json > custom-settings_run.json
