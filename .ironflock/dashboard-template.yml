@@ -141,6 +141,11 @@ widgets:
           tablename: devices
           queryParams:
             limit: 500
+            filterAnd:
+              - column: latest_flag
+                operator: =
+                value: "TRUE"
+                dataType: boolean
           format:
             url: url
     custom_style: null
