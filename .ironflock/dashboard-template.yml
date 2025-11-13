@@ -132,6 +132,20 @@ widgets:
       trailingSlash: null
     version: 1.0.9
     layout_id: b14fb7d0-d62a-4921-9fa7-1b452469af1c
+  - package_name: widget-embed
+    chartconfig:
+      multiEmbed: $bool:true
+      gap: $num:4
+      data:
+        tableRef:
+          tablename: devices
+          queryParams:
+            limit: 500
+          format:
+            url: url
+    custom_style: null
+    version: 1.0.4
+    layout_id: ef02ba85-1be6-47c7-8bcc-f9c66997d550
   - package_name: widget-textbox
     chartconfig:
       title:
@@ -163,7 +177,7 @@ layout:
       y: 3
       w: 48
       h: 45
-      id: 7828c821-52b5-4b64-ab21-5ec85c697875
+      id: ef02ba85-1be6-47c7-8bcc-f9c66997d550
   subRoutes:
     "*":
       gridLayout:
