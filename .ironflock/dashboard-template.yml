@@ -144,7 +144,7 @@ widgets:
             filterAnd:
               - column: latest_flag
                 operator: =
-                value: "TRUE"
+                value: "true"
                 dataType: boolean
           format:
             url: url
