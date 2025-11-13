@@ -148,8 +148,10 @@ widgets:
                 dataType: boolean
           format:
             url: url
+            title: devname
+      title: null
     custom_style: null
-    version: 1.0.4
+    version: 1.0.5
     layout_id: ef02ba85-1be6-47c7-8bcc-f9c66997d550
   - package_name: widget-textbox
     chartconfig:
