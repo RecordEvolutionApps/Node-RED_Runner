@@ -1,6 +1,6 @@
 
 # Set a base docker image (see https://hub.docker.com/r/nodered/node-red) 
-FROM nodered/node-red:4.1.0
+FROM nodered/node-red:5.0.0
 USER root
 
 RUN apk update && apk add --no-cache python3 py3-pip py3-setuptools build-base sqlite-dev jq gettext
